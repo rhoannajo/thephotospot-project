@@ -10,9 +10,9 @@ Please follow the instructions below and fill in the information requested when 
 
 |               | Information   |
 |:-------------:|:-------------:|
-| Student Name  | name-here     |
-| Student ID    | id-here       |
-| Student Email | email-here    |
+| Student Name  | Rhoanna Perez |
+| Student ID    | 918488472     |
+| Student Email | rperez12@mail.sfsu.edu|
 
 
 
