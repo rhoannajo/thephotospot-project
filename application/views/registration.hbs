@@ -1,0 +1,33 @@
+<form id="form" class="box">
+    <h2 class="center">Create an Account</h2>
+    <hr>
+    <div class="spacing">
+        <label class="bold">Create username</label><span id="error-user"></span>
+        <input id="username" type="text" placeholder="Username" onchange="usernameValidation()"/>
+        <br/>
+        <label class="bold">Email</label><span id="error-email"></span>
+        <input id="email" type="email" placeholder="Email" onchange="emailValidation()" required/>
+        <br/>
+
+        <label class="bold">Create a password</label><span id="error-password"></span>
+        <input id="password" type="password" placeholder="Create a password" onchange="passValidation()"/>
+        <br/>
+
+        <label class="bold">Confirm password</label><span id="error-confirmpass"></span>
+        <input id="confirm-pass" type="password" placeholder="Confirm password" onchange="confirmPassValid()"/>
+        <br/>
+    </div>
+
+    <br/>
+    <input id="check-age" type="checkbox" required onchange="checksValidation()"/>
+    <label class="smalltext">I am 13+ years of age</label>
+    <br/>
+
+    <input id= "check-terms" type="checkbox" required onchange="checksValidation()"/>
+    <label class="smalltext">I agree to the <a href="#">TOS and Privacy</a> rules</label>
+    <br/>
+    <br/>
+    <button id="submit-button" class="register-button" onclick="validateButton()" type="button">Submit</button>
+    <div class="center" id="error-button"></div>
+    <p class="smalltext center">Have an account? <a href="login">Login</a></p>
+</form>
