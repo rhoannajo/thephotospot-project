@@ -1,13 +1,13 @@
-<form class="box">
+<form class="box" method="POST"action= "/users/login" enctype="application/x-www-form-urlencoded">
     <div class="spacing">
         <h2 class="center">Login</h2>
         <hr>
         <label class="bold">Username</label>
-        <input type=text placeholder="Username"required/>
+        <input name="username" type=text placeholder="Username"required/>
         <br/>
         <br/>
         <label class="bold">Password</label>
-        <input type="password" placeholder="Password" required/>
+        <input name="password" type="password" placeholder="Password" required/>
         <br/>
         <br/>
         <button type="submit">Submit</button>

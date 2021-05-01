@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
-    <link rel="stylesheet" type="text/css" href="public/css/styling.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/styling.css">
     <script defer type="text/javascript" src="public/js/formValidation.js"></script>
     <script defer type="text/javascript" src="public/js/event.js"></script>
 </head>
@@ -15,6 +15,27 @@
 </header>
 
 <body>
+    <div>
+        {{log this}}
+        {{#if (emptyObject messages)}}
+        {{> flashmessage}}
+        {{/if}}
     {{{body}}}
+    </div>
+    {{#if logged}}
+        <script>
+            let ele = document.getElementById('logout-button');
+            if (ele) {
+                ele.onclick = (even) => {
+                    fetch('/users/logout', {
+                        method: "POST"
+                    })
+                    .then((data) => {
+                        location.replace('/');
+                    })
+                }
+            }
+        </script>
+    {{/if}}
 </body>
 </html>
