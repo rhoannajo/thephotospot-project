@@ -203,3 +203,30 @@ button {
     width: 40%;
     min-width: 40%;
 }
+
+#flash-message {
+    position: fixed;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, 0);
+}
+
+#flash-message div {
+    text-align: center;
+}
+
+.alert-error {
+    display: inline-flex;
+    padding: 10px;
+    font-size: 15px;
+    background-color:rgb(197, 132, 132);
+    color:rgb(70, 9, 9);
+}
+
+.alert-success {
+    display: inline-flex;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgba(152, 240, 144, 0.507);
+    color: rgb(8, 37, 5)
+}

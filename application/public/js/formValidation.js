@@ -83,7 +83,7 @@ function passValidation() {
 
 function confirmPassValid() {
     var pass = document.getElementById("password").value;
-    var confirmPass = document.getElementById("confirm-pass").value;
+    var confirmPass = document.getElementById("confirmpass").value;
     if (pass != confirmPass || pass == "") {
         document.getElementById("error-confirmpass").innerHTML = "<label class='error-text'> Passwords do not match</label>";   
         valid = false;
@@ -92,7 +92,7 @@ function confirmPassValid() {
         valid = true;
     }
     if (!valid) {
-        document.getElementById("confirm-pass").setAttribute("class", "error-box");
+        document.getElementById("confirmpass").setAttribute("class", "error-box");
         valid = false;
     }
 }
@@ -104,10 +104,12 @@ function checksValidation() {
     if (checkage == false) {
         valid = false;
         document.getElementById("check-age").setAttribute("class", "error-box");
+        //valid = true;
     } 
     if (checkterms == false) {
         valid = false;
         document.getElementById("check-terms").setAttribute("class", "error-box");
+        //valid = true;
     }
 
 }
@@ -115,7 +117,7 @@ function checksValidation() {
 function validateButton() {
     if (valid) {
         document.getElementById("error-button").innerHTML = "<label class='submit-text'> Submitted!</label>";
-        document.location.reload(true);
+        //document.location.reload(true);
     } 
     if (!valid) {
         document.getElementById("error-button").innerHTML = "<label class='error-text'> Cannot submit. Check errors.</label>";
