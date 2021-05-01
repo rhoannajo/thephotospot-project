@@ -4,7 +4,6 @@ var isLoggedIn = require('../middleware/routeprotectors').userIsLoggedIn;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  //next(new Error('test'));
   res.render("index", {title: "Welcome"});
 });
 
