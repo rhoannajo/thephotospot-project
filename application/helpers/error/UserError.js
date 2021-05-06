@@ -10,7 +10,7 @@ class UserError extends Error {
     }
 
     getRedirectURL() {
-        return this.getRedirectURL;
+        return this.redirectURL;
     }
 
     getStatus() {

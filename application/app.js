@@ -8,6 +8,7 @@ var flash = require('express-flash');
 var handlebars = require('express-handlebars');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var postsRouter = require('./routes/posts');
 var dbRouter = require('./routes/dbtest');
 var errorPrint = require("./helpers/debug/debugprinters.js").errorPrint;
 var requestPrint = require("./helpers/debug/debugprinters.js").requestPrint;
@@ -67,8 +68,9 @@ app.use((req, res, next) => {
 })
 
 app.use('/', indexRouter);
-app.use('/dbtest', dbRouter);
+//app.use('/dbtest', dbRouter);
 app.use('/users', usersRouter);
+app.use('/posts', postsRouter);
 
 //from example to test error
 /*app.use((err, req, res, next) => {

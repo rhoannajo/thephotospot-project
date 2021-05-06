@@ -1,19 +1,19 @@
-    <form class="box">
+    <form class="box" method="POST" enctype="multipart/form-data" action="/posts/createPost">
     <div class="spacing">
-        <label class="bold">Title</label>
+        <label for="post-title" class="bold">Title</label>
         <br/>
-        <input class="post-inputs"type="text" required/>
-        <br/>
-        <br/>
-
-        <label class="bold">Description</label>
-        <br/>
-        <input class="desc-box" type="text" required/>
+        <input id="post-title" name="title" class="post-inputs"type="text" required/>
         <br/>
         <br/>
 
-        <label class="bold">Choose Image</label>
-        <input type="file" required/>
+        <label for="post-desc" class="bold">Description</label>
+        <br/>
+        <input id="post-desc" name="description" class="desc-box" type="text" required/>
+        <br/>
+        <br/>
+
+        <label for="img-select" class="bold">Choose Image</label>
+        <input id="img-select" name="uploadImage" type="file" required/>
         <br/>
         
         <input type="checkbox" required/>

@@ -210,7 +210,7 @@ button {
 #flash-message {
     position: fixed;
     left: 50%;
-    top: 15%;
+    top: 30%;
     transform: translate(-50%, 0);
 }
 
@@ -259,4 +259,14 @@ button {
 
 .button:hover {
     background-color:rgb(82, 109, 129)
+}
+
+.regist-photo {
+    width: 75%;
+    min-width: 20%;
+}
+
+.login-photo {
+    width: 40%;
+    min-width: 20%;
 }

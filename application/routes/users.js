@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var db = require('../conf/database')
+var db = require('../conf/database');
 
 var errorPrint = require("../helpers/debug/debugprinters.js").errorPrint;
 var successPrint = require("../helpers/debug/debugprinters.js").successPrint;
@@ -158,7 +158,7 @@ router.post('/login', (req, res, next) => {
   .then(([results, fields]) => {
     if (results && results.length == 1) {
       let hashedPassword = results[0].password;
-      userId = results[0].userId;
+      userId = results[0].id;
       return bcrypt.compare(password, hashedPassword);
     } else {
       throw new UserError("Invalid username and/or password", "/login", 200);
