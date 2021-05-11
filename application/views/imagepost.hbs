@@ -1,15 +1,17 @@
-<div class="imagepost-box">
+<div class="imagepost-box center">
     <section>
-        <h1 class="title">Title</h1>
+        <h1 class="title">{{currentPost.title}}</h1>
     </section>
     <section>
-        <h4>Author</h4>
+        <h4>{{curentPost.username}}</h4>
     </section>
     <section>
-        <h5>Time Posted</h5>
+        <h5>{{currentPost.created}}</h5>
     </section>
     <section>
-        <h4>Image</h4>
-        <img src="https://fakeimg.pl/350x200/?text=Hello">
+        <img class="image-view" src="/{{currentPost.photopath}}">
+    </section>
+    <section>
+        <h3>{{currentPost.description}}</h3>
     </section>
 </div>    
