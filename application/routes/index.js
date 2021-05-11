@@ -22,8 +22,7 @@ router.get('/postimage', (req, res, next) => {
   res.render("postimage", {title: "Create a Post"});
 });
 
-router.get('/post/:id(\\d+)', (req, res, next) => {
-  //res.send({params: req.params.id});
+router.get('/posts/:id(\\d+)', (req, res, next) => {
   let baseSQL = "SELECT u.id, u.username, p.title, p.description, p.photopath, p.created \
   FROM users u JOIN posts p ON u.id=fk_userid WHERE p.id=?;";
 

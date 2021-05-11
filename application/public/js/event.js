@@ -36,7 +36,7 @@ if (mainDiv) {
 
 var count = 50;
 
-function fadeOutEffect(event) {
+/*function fadeOutEffect(event) {
     var fadeTarget = event.currentTarget;
     var fadeEffect = setInterval(function () {
         if (!(fadeTarget.style.opacity)) {
@@ -52,7 +52,7 @@ function fadeOutEffect(event) {
         }
     }, 50);
 
-}
+}*/
 
 var item = document.getElementsByClassName("item");
 let url = "https://jsonplaceholder.typicode.com/albums/2/photos";
@@ -65,7 +65,7 @@ fetch(url)
     document.getElementById('items-count').innerHTML = `There are ${photos.length} photo(s) being displayed.`;
 });
 
-function setFlashMessageFadeOut() {
+/* function setFlashMessageFadeOut() {
     setTimeout(() => {
         let currentOpacity = 1.0;
         let timer = setInterval(() => {
@@ -83,4 +83,4 @@ function setFlashMessageFadeOut() {
 let flashElement = document.getElementById('flash-message');
 if (flashElement) {
     setFlashMessageFadeOut();
-}
+} */

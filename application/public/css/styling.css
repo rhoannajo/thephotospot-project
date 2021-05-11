@@ -256,7 +256,7 @@ button {
     float: left;
 }
 
-.button {
+.search-button {
     margin-top: 8px !important;
     display: inline !important;
     margin-left: 0 !important;
@@ -268,7 +268,7 @@ button {
     background-color:rgb(14, 49, 75)
 }
 
-.button:hover {
+.search-button:hover {
     background-color:rgb(82, 109, 129)
 }
 
