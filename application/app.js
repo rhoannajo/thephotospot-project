@@ -9,7 +9,8 @@ var handlebars = require('express-handlebars');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var postsRouter = require('./routes/posts');
-var dbRouter = require('./routes/dbtest');
+var commentRouter = require('./routes/comments');
+
 var errorPrint = require("./helpers/debug/debugprinters.js").errorPrint;
 var requestPrint = require("./helpers/debug/debugprinters.js").requestPrint;
 var successPrint = require("./helpers/debug/debugprinters.js").successPrint;
@@ -71,6 +72,7 @@ app.use('/', indexRouter);
 //app.use('/dbtest', dbRouter);
 app.use('/users', usersRouter);
 app.use('/posts', postsRouter);
+app.use('/comments', commentRouter);
 
 //from example to test error
 /*app.use((err, req, res, next) => {
