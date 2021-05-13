@@ -12,14 +12,14 @@ function setFlashMessageFadeOut(flashMessageElement) {
     }, 4000);
 }
 
-function addFlashFromFrontEnd(message) {
+function addFlashFromFrontEnd(message, level) {
     let flashMessageDiv = document.createElement('div');
     let innerFlashDiv = document.createElement('div');
     let innerTextNode = document.createTextNode(message);
     innerFlashDiv.appendChild(innerTextNode);
     flashMessageDiv.appendChild(innerFlashDiv);
     flashMessageDiv.setAttribute('id', 'flash-message');
-    innerFlashDiv.setAttribute('class', 'alert-success');
+    innerFlashDiv.setAttribute('class', `alert-success`);
     document.getElementsByTagName('body')[0].appendChild(flashMessageDiv);
     setFlashMessageFadeOut(flashMessageDiv);
 }
