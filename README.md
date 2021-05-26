@@ -2,17 +2,15 @@
 
 ## Purpose
 
-The purpose of this repository is to store all the code for your web application. This also includes the history of all commits made and who made them. Only code submitted on the master branch will be graded.
+This is a photo uploading app that allows users to create an account and post photos using HTML, CSS, Node.js, Express.js, Javascript and MySQL.
 
-Please follow the instructions below and fill in the information requested when prompted.
 
 ## Student Information
 
 |               | Information   |
 |:-------------:|:-------------:|
 | Student Name  | Rhoanna Perez |
-| Student ID    | 918488472     |
-| Student Email | rperez12@mail.sfsu.edu|
+| Student Email | rhoannajo@gmail.com|
 
 
 
@@ -20,8 +18,6 @@ Please follow the instructions below and fill in the information requested when 
 
 ## Build Instructions
 1. npm install
-2. steps here
 
 ## Run Instructions
 1. npm start
-2. steps here 
