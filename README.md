@@ -12,7 +12,6 @@ This is a photo uploading app that allows users to create an account and post ph
 | Student Name  | Rhoanna Perez |
 | Student Email | rhoannajo@gmail.com|
 
-Before building and running, open your terminal. 
 # Build/Run Instructions
 
 ## Build Instructions
